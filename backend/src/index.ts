@@ -13,7 +13,8 @@ app.use(cors({
   credentials: true
 }));
 
-app.use("/images", express.static(path.join(process.cwd(), "public/images")));
+app.use("/images", express.static(path.resolve(__dirname, "../public/images")));
+
 app.use(express.json());
 
 app.use('/api/auth', authRouter);
