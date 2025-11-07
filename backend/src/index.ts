@@ -10,8 +10,10 @@ const app = express();
 const port = process.env.PORT || 5000;
 
 app.use(cors({
+  origin: ["http://localhost:3000", "https://foodzy.vercel.app"],
   credentials: true
 }));
+
 
 app.use("/images", express.static(path.resolve(__dirname, "../public/images")));
 
