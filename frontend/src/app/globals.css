@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500&family=Playfair+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap");
+
+@import "tailwindcss";
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+* {
+  box-sizing: border-box;
+}
+@layer utilities {
+  .font-poppins {
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .font-roboto {
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .font-playfair {
+    font-family: 'Playfair Display', serif;
+  }
+
+  .font-segoe {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+   
+  .font-inter {
+    font-family: 'Inter', sans-serif;
+  }
+  .font-arial {
+  font-family: 'Arial', sans-serif;
+}
+.font-montserrat{
+  font-family: 'Montserrat',sans-serif ;
+}
+.font-quicksand {
+    font-family: 'Quicksand', sans-serif;
+  }
+ .font-lato {
+    font-family: 'Lato', sans-serif;
+  }
+
+  .font-manrope{
+    font-family: 'Manrope', sans-serif;
+  }
+}
+
+
+
+.shadow-bottom {
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
