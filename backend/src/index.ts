@@ -10,7 +10,7 @@ const app = express();
 const port = process.env.PORT || 5000;
 
 app.use(cors({
-  origin: ["http://localhost:3000", "https://foodzy.vercel.app"],
+  origin: ["http://localhost:3000", "https://foodzy-henna.vercel.app"],
   credentials: true
 }));
 
