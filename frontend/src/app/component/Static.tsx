@@ -3,9 +3,9 @@ import React from 'react'
 
 const Static: React.FC  =()=> {
   return (
-    <div className='bg-[rgba(240,240,240,1)] w-full h-130 flex items-center pl-20 relative overflow-hidden scrollbar-hide'>
+    <div className='bg-[rgba(240,240,240,1)] w-full h-150 flex items-center pl-20 relative overflow-hidden scrollbar-hide'>
 
-        <img src="b1.svg" alt="" className='h-80 absolute right-[-45] bottom-0 object-contain '/>
+        <img src="b1.svg" alt="" className='h-90 absolute right-[-45] bottom-0 object-contain '/>
         <img src="img2.svg" alt="" className='h-15 absolute left-120 top-0'/>
         <img src="ing3.png" alt="" className='h-15 absolute left-140 bottom-10'/>
         <img src="img4.png" alt="" className='h-7 absolute left-0 top-0'/>

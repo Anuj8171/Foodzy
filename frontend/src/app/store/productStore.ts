@@ -28,7 +28,7 @@ export const useProductStore = create<ProductStore>((set) => ({
   loading: false,
   error: null,
 
-  //Fetch all products
+  
   fetchProducts: async () => {
     try {
       set({ loading: true });
@@ -46,7 +46,7 @@ export const useProductStore = create<ProductStore>((set) => ({
     }
   },
 
-  // Fetch a single product by ID
+
   getProductById: async (id: string) => {
     try {
       set({ loading: true });

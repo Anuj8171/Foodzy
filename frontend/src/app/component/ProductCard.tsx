@@ -1,62 +1,64 @@
-import React from 'react';
-import { Product } from '../store/productStore';
-import { ShoppingCart, Star } from 'lucide-react';
-import Link from 'next/link'; // ✅ use Next.js Link properly
-
+import React from "react";
+import { Product } from "../store/productStore";
+import { ShoppingCart, Star } from "lucide-react";
+import Link from "next/link";
 
 interface ProductCardProps {
   product: Product;
 }
 
 const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
-    
   return (
-    <Link href={`/product/${product.id}`}>
-      <div className="border border-[rgba(236,236,236,1)] rounded-xl p-4 w-48 h-75 overflow-hidden relative hover:shadow-md transition-shadow duration-200">
+    <Link href={`/product/${product.id}`} className="block">
+      <div className="relative w-[215px] bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden">
         
-      
-        <div className="absolute top-0 left-0 bg-[rgba(103,188,238,1)] rounded-br-xl w-10 h-5 text-white text-[8px] flex items-center justify-center">
+        <div className="absolute top-2 left-2 bg-[rgba(103,188,238,1)] text-white text-[10px] px-2 py-0.5 rounded-md">
           Sale
         </div>
 
-    
-        <img src={product.image} alt={product.name} className="w-full h-32 object-contain mt-3" />
-
-    
-        <p className="text-[rgba(173,173,173,1)] text-[8px] mt-2">{product.type}</p>
+       
+        <div className="w-full h-[150px] flex items-center justify-center bg-white p-3">
+          <img
+            src={product.image}
+            alt={product.name}
+            className="object-contain max-h-full rounded-md"
+          />
+        </div>
 
      
-        <h3 className="font-medium text-[11px] font-poppins mt-1 leading-tight">
-          {product.name}
-        </h3>
+        <div className="px-4 pb-4">
+          <p className="text-[10px] text-gray-400 mt-2">{product.type}</p>
 
-        <p className="text-[9px] text-[rgba(182,182,182,1)] mt-1 font-lato flex items-center gap-1">
-          <Star size={9} color="#FFD700" fill="#FFD700" />
-          ({product.rating.toFixed(1)})
-        </p>
+          <h3 className="font-semibold text-[13px] text-gray-800 leading-snug mt-1">
+            {product.name}
+          </h3>
 
-        <p className="text-[9px] text-[rgba(59,183,126,1)] mt-1">
-          <span className="text-[rgba(182,182,182,1)]">By </span>
-          {product.brand}
-        </p>
+          <div className="flex items-center gap-1 mt-1 text-[10px] text-gray-500">
+            <Star size={12} color="#FFD700" fill="#FFD700" />
+            <span>({product.rating.toFixed(1)})</span>
+          </div>
 
-        
-        <div className="flex justify-between items-center mt-3">
-          <p className="font-quicksand font-bold text-xs text-[rgba(59,183,126,1)]">
-            ${product.price.toFixed(2)}
-            <span className="text-[rgba(173,173,173,1)] line-through text-[9px] ml-2">
-              ${(product.price + 1).toFixed(2)}
-            </span>
+          <p className="text-[10px] text-[rgba(59,183,126,1)] mt-1">
+            <span className="text-gray-400">By </span>
+            {product.brand}
           </p>
 
-          <button
-           
-            title="Add to cart"
-            className="inline-flex items-center gap-1 border-0 text-white bg-[rgba(245,62,50,1)] text-[9px] px-2 py-1 rounded-xs hover:bg-[rgba(230,50,40,1)] transition"
-          >
-            <ShoppingCart size={9} />
-            <span className="text-[8px]">Add</span>
-          </button>
+          <div className="flex items-center justify-between mt-3">
+            <p className="font-quicksand font-bold text-[14px] text-[rgba(59,183,126,1)]">
+              ${product.price.toFixed(2)}
+              <span className="text-gray-400 line-through text-[11px] ml-2">
+                ${(product.price + 1).toFixed(2)}
+              </span>
+            </p>
+
+            <button
+              title="Add to cart"
+              className="inline-flex items-center gap-1 bg-[rgba(245,62,50,1)] text-white text-[10px] px-3 py-1.5 rounded-md hover:bg-[rgba(230,50,40,1)] transition"
+            >
+              <ShoppingCart size={12} />
+              <span>Add</span>
+            </button>
+          </div>
         </div>
       </div>
     </Link>

@@ -13,7 +13,7 @@ const BestSellsCard: React.FC<ProductCardProps> = ({ product }) => {
     
   return (
     <Link href={`/product/${product.id}`}>
-      <div className="border border-[rgba(236,236,236,1)] rounded-xl p-4 w-48 h-80 overflow-hidden relative hover:shadow-md transition-shadow duration-200">
+      <div className="border border-[rgba(236,236,236,1)] rounded-xl p-4 w-53 h-85 overflow-hidden relative hover:shadow-md transition-shadow duration-200">
         
       
         <div className="absolute top-0 left-0 bg-[rgba(103,188,238,1)] rounded-br-xl w-10 h-5 text-white text-[8px] flex items-center justify-center">
@@ -60,7 +60,7 @@ const BestSellsCard: React.FC<ProductCardProps> = ({ product }) => {
           <button
            
             title="Add to cart"
-            className="inline-flex w-40  items-center justify-center gap-1 border-0 text-white bg-[rgba(245,62,50,1)] text-[9px] p-2  mt-6 rounded-xs hover:bg-[rgba(230,50,40,1)] transition"
+            className="inline-flex w-40  items-center justify-center gap-1 border-0 text-white bg-[rgba(245,62,50,1)] text-[9px] p-2 mx-auto mt-9 rounded-xs hover:bg-[rgba(230,50,40,1)] transition"
           >
            
             <span className="text-[10px]">Add to Cart</span>

@@ -29,10 +29,10 @@ export const useOrderStore = create<OrderStore>((set, get) => ({
   loading: false,
   error: null,
 
-  // Create order
+
   createOrder: async (orderData) => {
   const { cart, total, clearCart } = useCartStore.getState();
-  const { email, verified } = useEmailStore.getState(); // get verified email
+  const { email, verified } = useEmailStore.getState();
 
   if (!verified || !email) {
     toast.error("Please verify your email before placing the order.");
@@ -44,7 +44,7 @@ export const useOrderStore = create<OrderStore>((set, get) => ({
   try {
     await axiosInstance.post("/product/order", {
       ...orderData,
-      email, // use the verified email here
+      email, 
       items: cart.map((item) => ({
         id: item.id,
         name: item.name,

@@ -23,17 +23,17 @@ export default function NavBar() {
   return (
     <div className="w-full h-[142px] bg-white mb-[-10] ">
       
-      {/* Top Row */}
+     
       <div className="h-[55px] w-full flex items-center justify-between px-55 max-w-[1920px] mx-auto border-b border-[#E9E9E9] shadow-[0px_4px_8px_rgba(51,51,51,0.15)]">
         
-        {/* Left menu icon */}
+        
         <div className="flex items-center gap-6 ">
           <svg width="30" height="30" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect x=".5" y=".5" width="34" height="34" rx="4.5" stroke="#E9E9E9"/>
             <path d="M6.25 10.17h16.5V12H6.25v-1.83ZM6.25 16.58h11v1.83h-11v-1.83ZM6.25 23h16.5v1.83H6.25V23Z" fill="#2B2B2D"/>
           </svg>
             </div>
-          {/* Menu Items */}
+         
           <div className="flex items-center gap-6">
             <Link href="/" className="text-[13px] font-medium font-poppins">Home</Link>
             <span className="text-[13px] font-medium font-poppins inline-flex items-center gap-1">Category <ChevronDown className="w-4 h-4" /></span>
@@ -44,21 +44,20 @@ export default function NavBar() {
           </div>
        
 
-        {/* Phone */}
+        
         <div className="flex items-center gap-2 text-[13px] font-segoe  ">
           <Phone size={14} />
           +123 ( 456 ) ( 7890 )
         </div>
       </div>
 
-      {/* Bottom Row */}
+ 
       <div className="h-18 w-full max-w-[1920px] mx-auto flex items-center justify-between px-50  border-b-2 border-gray-100">
-        
-        {/* Logo */}
+      
         <div className="flex items-center">
-  <img src="logo2.svg" alt="Logo" className="w-[45px] h-[45px]" />
+  <img src="logo2.svg" alt="Logo" className="w-[49px] h-[49px] m-0 p-0" />
 
-  <div className="flex flex-col justify-center leading-tight">
+  <div className="flex flex-col justify-center leading-tight ml-[-5]">
     <h2 className="font-inter font-black text-[16px] tracking-[0.48px]">
       Foodzy
     </h2>
@@ -69,16 +68,16 @@ export default function NavBar() {
 </div>
 
 
-        {/* Search bar */}
+        
         <div className="flex items-stretch w-[440px] h-8 bg-white border border-[rgba(100,180,150,1)] rounded-sm overflow-hidden">
-          {/* Search input */}
+          
                 <input
                   type="search"
-                  placeholder="Search for items...anuj"
+                  placeholder="Search for items..."
                   className="flex-1 px-4 text-xs text-gray-700 placeholder-gray-400 outline-none"
                 />
 
-                {/* Category Dropdown */}
+                
                 <select
                   className="text-xs pl-1 text-gray-700 border-l-2 border-[rgba(100,180,150,1)] outline-none bg-transparent"
                   defaultValue="All Categories"
@@ -89,13 +88,13 @@ export default function NavBar() {
                   <option>Home & Garden</option>
                 </select>
 
-                {/* Search Button */}
+              
                 <button
                   className="flex items-center justify-center w-10 bg-red-500"
                   aria-label="Search"
                 >
                   <svg
-                    className="w-3 h-3 text-white" // smaller size
+                    className="w-3 h-3 text-white" 
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -111,7 +110,7 @@ export default function NavBar() {
            </div>
 
 
-                        {/* Right icons */}
+                        
                         <div className="flex items-center gap-6">
                         <span className="text-[13px] font-medium font-poppins inline-flex items-center gap-1">
                             <User size={16} /> Account
