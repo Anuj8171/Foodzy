@@ -24,7 +24,7 @@ export default function NavBar() {
     <div className="w-full h-[142px] bg-white mb-[-10] ">
       
       {/* Top Row */}
-      <div className="h-[55px] w-full flex items-center justify-between px-40 max-w-[1920px] mx-auto border-b border-[#E9E9E9] shadow-[0px_4px_8px_rgba(51,51,51,0.15)]">
+      <div className="h-[55px] w-full flex items-center justify-between px-50 max-w-[1920px] mx-auto border-b border-[#E9E9E9] shadow-[0px_4px_8px_rgba(51,51,51,0.15)]">
         
         {/* Left menu icon */}
         <div className="flex items-center gap-6 ">
@@ -35,40 +35,42 @@ export default function NavBar() {
             </div>
           {/* Menu Items */}
           <div className="flex items-center gap-6">
-            <Link href="/" className="text-[11px] font-medium font-poppins">Home</Link>
-            <span className="text-[11px] font-medium font-poppins inline-flex items-center gap-1">Category <ChevronDown className="w-4 h-4" /></span>
-            <span className="text-[11px] font-medium font-poppins inline-flex items-center gap-1">Products <ChevronDown className="w-4 h-4" /></span>
-            <span className="text-[11px] font-medium font-poppins inline-flex items-center gap-1">Pages <ChevronDown className="w-4 h-4" /></span>
-            <span className="text-[11px] font-medium font-poppins inline-flex items-center gap-1">Blog <ChevronDown className="w-4 h-4" /></span>
-            <span className="text-[11px] font-medium font-poppins inline-flex items-center gap-1">Element <ChevronDown className="w-4 h-4" /></span>
+            <Link href="/" className="text-[13px] font-medium font-poppins">Home</Link>
+            <span className="text-[13px] font-medium font-poppins inline-flex items-center gap-1">Category <ChevronDown className="w-4 h-4" /></span>
+            <span className="text-[13px] font-medium font-poppins inline-flex items-center gap-1">Products <ChevronDown className="w-4 h-4" /></span>
+            <span className="text-[13px] font-medium font-poppins inline-flex items-center gap-1">Pages <ChevronDown className="w-4 h-4" /></span>
+            <span className="text-[13px] font-medium font-poppins inline-flex items-center gap-1">Blog <ChevronDown className="w-4 h-4" /></span>
+            <span className="text-[13px] font-medium font-poppins inline-flex items-center gap-1">Element <ChevronDown className="w-4 h-4" /></span>
           </div>
        
 
         {/* Phone */}
-        <div className="flex items-center gap-2 text-[11px] font-segoe  ">
-          <Phone size={13} />
+        <div className="flex items-center gap-2 text-[13px] font-segoe  ">
+          <Phone size={14} />
           +123 ( 456 ) ( 7890 )
         </div>
       </div>
 
       {/* Bottom Row */}
-      <div className="h-18 w-full max-w-[1920px] mx-auto flex items-center justify-between px-38  border-b-2 border-gray-100">
+      <div className="h-18 w-full max-w-[1920px] mx-auto flex items-center justify-between px-45  border-b-2 border-gray-100">
         
         {/* Logo */}
-        <div className="flex items-center ">
-          <img src="logo2.svg" alt="Logo" className="w-15 h-15" />
-          <div className="flex flex-col justify-center">
-            <h2 className="font-inter font-black text-[16px] leading-[18.2px] tracking-[0.48px]">
-              Foodzy
-            </h2>
-            <p className="font-inter text-[9px] font-normal ">
-              A Treasure of Tastes
-            </p>
-          </div>
-        </div>
+        <div className="flex items-center">
+  <img src="logo2.svg" alt="Logo" className="w-[45px] h-[45px]" />
+
+  <div className="flex flex-col justify-center leading-tight">
+    <h2 className="font-inter font-black text-[16px] tracking-[0.48px]">
+      Foodzy
+    </h2>
+    <p className="font-inter text-[9px] font-medium text-gray-700">
+      A Treasure of Tastes
+    </p>
+  </div>
+</div>
+
 
         {/* Search bar */}
-        <div className="flex items-stretch w-[400px] h-8 bg-white border border-[rgba(100,180,150,1)] rounded-sm overflow-hidden">
+        <div className="flex items-stretch w-[410px] h-8 bg-white border border-[rgba(100,180,150,1)] rounded-sm overflow-hidden">
           {/* Search input */}
                 <input
                   type="search"
@@ -111,17 +113,17 @@ export default function NavBar() {
 
                         {/* Right icons */}
                         <div className="flex items-center gap-6">
-                        <span className="text-[11px] font-medium font-poppins inline-flex items-center gap-1">
-                            <User size={15} /> Account
+                        <span className="text-[13px] font-medium font-poppins inline-flex items-center gap-1">
+                            <User size={16} /> Account
                         </span>
-                        <span className="text-[11px] font-medium font-poppins inline-flex items-center gap-1">
-                            <Heart size={15} /> Wishlist
+                        <span className="text-[13px] font-medium font-poppins inline-flex items-center gap-1">
+                            <Heart size={16} /> Wishlist
                         </span>
                         <span
                             onClick={handleCartClick}
-                            className="relative text-[11px] font-medium font-poppins inline-flex items-center gap-1 cursor-pointer"
+                            className="relative text-[13px] font-medium font-poppins inline-flex items-center gap-1 cursor-pointer"
                           >
-                            <ShoppingCart size={15} /> Cart
+                            <ShoppingCart size={16} /> Cart
 
                             {cartCount > 0 && (
                               <span className="absolute -top-2 -right-3 bg-red-500 text-white text-[10px] font-bold w-[17px] h-[17px] flex items-center justify-center rounded-full">
