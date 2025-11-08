@@ -3,7 +3,7 @@ import React from 'react'
 
 const Static: React.FC  =()=> {
   return (
-    <div className='bg-[rgba(240,240,240,1)] w-full h-120 flex items-center pl-20 relative overflow-hidden scrollbar-hide'>
+    <div className='bg-[rgba(240,240,240,1)] w-full h-[851px] flex items-center pl-20 relative overflow-hidden scrollbar-hide'>
 
         <img src="b1.svg" alt="" className='h-80 absolute right-[-45] bottom-0 object-contain '/>
         <img src="img2.svg" alt="" className='h-15 absolute left-120 top-0'/>
@@ -13,15 +13,15 @@ const Static: React.FC  =()=> {
       <div className='flex flex-col gap-3'>
         <p className='font-bold '><span className='text-red-500 underline'>100%</span> Organic Vegetable </p>
         <div>
-        <p className='font-bold text-4xl font-arial'>The best way to</p>
-        <p className='font-bold text-4xl font-arial'>stuff your wallet.</p>
+        <p className='font-extrabold text-4xl font-arial'>The best way to</p>
+        <p className='font-extrabold text-4xl font-arial'>stuff your wallet.</p>
         </div>
-        <div>
+        <div className='pt-1'>
         <p className='text-[rgba(122,122,122,1)] text-[10px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet</p>
         <p className='text-[rgba(122,122,122,1)] text-[10px]'>reiciendis beatae consequuntur.</p>
         </div>
 
-        <div className='w-80 h-12 flex justify-between items-center pl-2  bg-white border-0 rounded-full'>
+        <div className='w-80 h-12 flex justify-between items-center pl-1 mt-5   bg-white border-0 rounded-full'>
             <div className='flex gap-2'>
                 <Send size='15' color='rgba(131, 131, 131, 1)'/>
             <p className='text-[rgba(131,131,131,1)] text-xs '>Your emaill address</p>
