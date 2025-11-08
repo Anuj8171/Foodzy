@@ -3,7 +3,7 @@ import React from 'react'
 
 const Static: React.FC  =()=> {
   return (
-    <div className='bg-[rgba(240,240,240,1)] w-full h-[851px] flex items-center pl-20 relative overflow-hidden scrollbar-hide'>
+    <div className='bg-[rgba(240,240,240,1)] w-full h-150 flex items-center pl-20 relative overflow-hidden scrollbar-hide'>
 
         <img src="b1.svg" alt="" className='h-80 absolute right-[-45] bottom-0 object-contain '/>
         <img src="img2.svg" alt="" className='h-15 absolute left-120 top-0'/>
