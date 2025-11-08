@@ -24,7 +24,7 @@ export default function NavBar() {
     <div className="w-full h-[142px] bg-white mb-[-10] ">
       
       {/* Top Row */}
-      <div className="h-[55px] w-full flex items-center justify-between px-50 max-w-[1920px] mx-auto border-b border-[#E9E9E9] shadow-[0px_4px_8px_rgba(51,51,51,0.15)]">
+      <div className="h-[55px] w-full flex items-center justify-between px-55 max-w-[1920px] mx-auto border-b border-[#E9E9E9] shadow-[0px_4px_8px_rgba(51,51,51,0.15)]">
         
         {/* Left menu icon */}
         <div className="flex items-center gap-6 ">
@@ -52,7 +52,7 @@ export default function NavBar() {
       </div>
 
       {/* Bottom Row */}
-      <div className="h-18 w-full max-w-[1920px] mx-auto flex items-center justify-between px-45  border-b-2 border-gray-100">
+      <div className="h-18 w-full max-w-[1920px] mx-auto flex items-center justify-between px-50  border-b-2 border-gray-100">
         
         {/* Logo */}
         <div className="flex items-center">
@@ -70,11 +70,11 @@ export default function NavBar() {
 
 
         {/* Search bar */}
-        <div className="flex items-stretch w-[410px] h-8 bg-white border border-[rgba(100,180,150,1)] rounded-sm overflow-hidden">
+        <div className="flex items-stretch w-[440px] h-8 bg-white border border-[rgba(100,180,150,1)] rounded-sm overflow-hidden">
           {/* Search input */}
                 <input
                   type="search"
-                  placeholder="Search for items..."
+                  placeholder="Search for items...anuj"
                   className="flex-1 px-4 text-xs text-gray-700 placeholder-gray-400 outline-none"
                 />
 
